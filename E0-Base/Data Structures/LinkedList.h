@@ -49,18 +49,18 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 	public:
 		LinkedList<T>() {
-			front = new Node;
-			back = new Node;
-			front->next = nullptr;
-			back->prev = nullptr;
+			front = back = nullptr;
 		};
 
 		Iterator begin() const {
-			return Iterator(front->next);
+			return Iterator(front);
 		};
 
 		Iterator end() const {
-			return Iterator(back);
+			if (back == nullptr)
+				return Iterator(back);
+
+			return Iterator(back->next);
 		};
 
 		bool isEmpty() const {
@@ -79,6 +79,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 			Node* temp = new Node;
 			temp->data = element;
 			temp->next = nullptr;
+			count++;
 
 			if (back == nullptr) {
 				front = back = temp;
@@ -87,11 +88,22 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 			back->next = temp;
 			back = temp;
-			count++;
 		};
 
 		void dequeue() {
-			
+			if (front == nullptr) {
+				return;
+			}
+			count--;
+
+			Node* temp = front;
+
+			front = front->next;
+
+			if (front == nullptr) {
+				back = nullptr;
+			}
+			delete(temp);
 		};
 
 		void pop() {
@@ -120,12 +132,16 @@ namespace ufl_cap4053 { namespace fundamentals {
 		void remove(T element) {
 			Iterator it = begin();
 			while (it != end()) {
-				++it;
-			}
+				if (*it == element) {
+					Node* temp = it.currentNode;
+					temp = temp->next;
+					temp->prev = temp;
+					delete temp;
 
-			if (*it == element) {
-				delete it.currentNode;
-				count--;
+					count--;
+					return;
+				}
+				++it;
 			}
 		};
 	};
