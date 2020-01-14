@@ -78,15 +78,15 @@ namespace ufl_cap4053 { namespace fundamentals {
 		void enqueue(T element) {
 			Node* temp = new Node;
 			temp->data = element;
+			temp->next = nullptr;
 
-			temp->next = front;
-			temp->prev = nullptr;
-
-			if (front != nullptr) {
-				front->prev = temp;
+			if (back == nullptr) {
+				front = back = temp;
+				return;
 			}
 
-			front = temp;
+			back->next = temp;
+			back = temp;
 			count++;
 		};
 
@@ -110,20 +110,20 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 		bool contains(T element) const {
 			Iterator it = begin();
-			while (!((it.currentNode == end().currentNode) && (it.currentNode->data == element))) {
+			while (!((it == end()) && (*it == element))) {
 				++it;
 			}
 			
-			return (it.currentNode->data == element);
+			return (*it == element);
 		};
 
 		void remove(T element) {
 			Iterator it = begin();
-			while (!(it.currentNode == end().currentNode)) {
+			while (it != end()) {
 				++it;
 			}
 
-			if (it.currentNode->data == element) {
+			if (*it == element) {
 				delete it.currentNode;
 				count--;
 			}

@@ -1,94 +1,94 @@
 ﻿  Behavior.cpp
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.cpp(24,57): error C2059: syntax error: '<'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.cpp(24,57): error C2059: syntax error: '<'
   Agent.cpp
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
   Behaviors.cpp
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(210,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(214,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(216,32): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(221,32): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(226,15): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(228,33): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(234,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(210,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(214,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(216,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(221,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(226,15): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(228,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(234,33): warning C4018: '<': signed/unsigned mismatch
   Game.cpp
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
-C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2504: 'TreeNode': base class undefined
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(12,27): error C2143: syntax error: missing ',' before '<'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,32): error C2662: 'const char *ufl_cap4053::fundamentals::Behavior::getData(void)': cannot convert 'this' pointer from 'const ufl_cap4053::fundamentals::Behavior' to 'ufl_cap4053::fundamentals::Behavior &'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(30,51): message : Conversion loses qualifiers
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,15): message : see declaration of 'ufl_cap4053::fundamentals::Behavior::getData'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(35,37): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(36,25): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(43,36): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(44,48): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(49,34): error C2653: 'TreeNode': is not a class or namespace name
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,66): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,64): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(61,89): error C2039: 'breadthFirstTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(69,86): error C2039: 'preOrderTraverse': is not a member of '`global namespace''
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,63): error C2065: 'TreeNode': undeclared identifier
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,61): error C2059: syntax error: 'const'
+C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\BehaviorTree\Behavior.h(77,86): error C2039: 'postOrderTraverse': is not a member of '`global namespace''
   World.cpp
   Generating Code...
