@@ -47,7 +47,7 @@ int main()
         cout << endl;
     }
 
-    // Test dequeue.
+    /*// Test dequeue.
     cout << endl << "Testing dequeue..." << endl;
     for (;;)
     {
@@ -62,7 +62,7 @@ int main()
             break;
         else
             valueList.dequeue();
-    }
+    }*/
 
     // Test removal of only element.
     cout << endl << "Removing the only element from valueList:";

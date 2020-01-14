@@ -43,47 +43,51 @@ namespace ufl_cap4053 { namespace fundamentals {
 		};
 
 	private:
-		Node* head;
-		Node* tail;
+		Node* front;
+		Node* back;
+		int count = 0;
 
 	public:
 		LinkedList<T>() {
-			head = new Node;
-			tail = new Node;
-			head->next = tail;
-			tail->prev = header;
+			front = new Node;
+			back = new Node;
+			front->next = nullptr;
+			back->prev = nullptr;
 		};
 
 		Iterator begin() const {
-			return Iterator(head->next);
+			return Iterator(front->next);
 		};
 
 		Iterator end() const {
-			return Iterator(tail);
+			return Iterator(back);
 		};
 
 		bool isEmpty() const {
-			return (head == nullptr);
+			return (count == 0);
 		};
 
 		T getFront() const {
-			return head->data;
+			return front->data;
 		};
 
 		T getBack() const {
-			return tail->data;
+			return back->data;
 		};
 
 		void enqueue(T element) {
-			if (head == NULL) {
-				head = new Node();
-				head->data = element;
-				tail = head;
-				return;
+			Node* temp = new Node;
+			temp->data = element;
+
+			temp->next = front;
+			temp->prev = nullptr;
+
+			if (front != nullptr) {
+				front->prev = temp;
 			}
-			tail->next = new Node();
-			tail->next->data = element;
-			tail = tail->next;
+
+			front = temp;
+			count++;
 		};
 
 		void dequeue() {
@@ -91,34 +95,37 @@ namespace ufl_cap4053 { namespace fundamentals {
 		};
 
 		void pop() {
-			tail = tail->previous;
-			delete tail->next;
+			back = back->prev;
+			delete back->next;
+			count--;
 		};
 
 		void clear() {
-			Iterator it = this->begin();
-			for (it; it != this->end(); it++) {
-				delete it->currentNode;
+			Iterator it = begin();
+			for (it; it != end(); ++it) {
+				delete it.currentNode;
+				count--;
 			}
 		};
 
 		bool contains(T element) const {
-			Iterator it = this->begin();
-			while (!(this->end()) && (it->currentNode->data == element)) {
-				it++;
+			Iterator it = begin();
+			while (!((it.currentNode == end().currentNode) && (it.currentNode->data == element))) {
+				++it;
 			}
 			
-			return (it->currentNode->data == element);
+			return (it.currentNode->data == element);
 		};
 
 		void remove(T element) {
-			Iterator it = this->begin();
-			while (!(this->end()) && (it->currentNode->data == element)) {
-				it++;
+			Iterator it = begin();
+			while (!(it.currentNode == end().currentNode)) {
+				++it;
 			}
 
-			if (it->currentNode->data == element) {
-				delete it->currentNode;
+			if (it.currentNode->data == element) {
+				delete it.currentNode;
+				count--;
 			}
 		};
 	};
