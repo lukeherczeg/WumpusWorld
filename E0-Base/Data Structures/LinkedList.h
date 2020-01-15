@@ -1,13 +1,3 @@
-#include <stdlib.h>
-#include <crtdbg.h>
-#define _CRTDBG_MAP_ALLOC
-#ifdef _DEBUG
-#define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
-// Replace _NORMAL_BLOCK with _CLIENT_BLOCK if you want the
-// allocations to be of _CLIENT_BLOCK type
-#else
-#define DBG_NEW new
-#endif
 
 // LinkedList class should go in the "ufl_cap4053::fundamentals" namespace!
 namespace ufl_cap4053 { namespace fundamentals {
@@ -22,17 +12,21 @@ namespace ufl_cap4053 { namespace fundamentals {
 		};
 
 		class Iterator {
-		public:
-			Node* currentNode;
-			
+		private:
+			// A node that the iterator currently points to.
+			Node* currentNode; 
+
+		public:			
+			// Constructor for the Iterator.
 			Iterator(Node* start) {
 				currentNode = start;
 			}
 
+			// Return the element at the iterator's current position in the queue.
 			T operator*() const {
 				return currentNode->data;
 			};
-
+			// Pre-increment overload; advance the operator one position in the list. Return this iterator. 
 			Iterator& operator++() {
 				if (currentNode->next != nullptr)
 					currentNode = currentNode->next;
@@ -41,30 +35,38 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 				return *this;
 			};
-
+			// Returns true it both iterators point to the same node in the list, and false otherwise.
 			bool operator==(Iterator const& rhs) {
 				return (currentNode == rhs.currentNode);
 			};
-
+			// Returns false it both iterators point to the same node in the list, and true otherwise.
 			bool operator!=(Iterator const& rhs) {
 				return (currentNode != rhs.currentNode);
 			};
+			// Gets the node that the iterator currently points to.
+			Node* getNode() {
+				return currentNode;
+			}
 		};
 
 	private:
+		// A sentinel front and back node, as well as count of elements in the list
 		Node* front;
 		Node* back;
 		int count = 0;
 
 	public:
+		// This is the constructor for LinkedList.
 		LinkedList<T>() {
 			front = back = nullptr;
 		};
 
+		// Returns an Iterator pointing to the beginning of the list.
 		Iterator begin() const {
 			return Iterator(front);
 		};
 
+		// Returns an Iterator pointing past the end of the list (an invalid, unique state)
 		Iterator end() const {
 			if (back == nullptr)
 				return Iterator(back);
@@ -72,20 +74,24 @@ namespace ufl_cap4053 { namespace fundamentals {
 			return Iterator(back->next);
 		};
 
+		// Returns true if there are no elements, false otherwise.
 		bool isEmpty() const {
 			return (count == 0);
 		};
 
+		// Returns the first element in the list
 		T getFront() const {
 			return front->data;
 		};
 
+		// Returns the last element in the list.
 		T getBack() const {
 			return back->data;
 		};
 
+		// Inserts the specified element to the list.
 		void enqueue(T element) {
-			Node* temp = DBG_NEW Node;
+			Node* temp = new Node;
 			temp->data = element;
 			temp->next = nullptr;
 			count++;
@@ -101,25 +107,24 @@ namespace ufl_cap4053 { namespace fundamentals {
 			back = temp;
 		};
 
+		// Removes the first element from the list.
 		void dequeue() {
-			if (front == nullptr) {
+			if (front == nullptr)
 				return;
-			}
 
 			count--;
 			Node* temp = front;
 			front = front->next;
 
-			if (front == nullptr) {
+			if (front == nullptr) 
 				back = nullptr;
-			}
-			else {
+			else
 				front->prev = nullptr;
-			}
 
 			delete temp;
 		};
 
+		// Removes the last element from the list.
 		void pop() {
 			if (back == nullptr) {
 				return;
@@ -129,15 +134,17 @@ namespace ufl_cap4053 { namespace fundamentals {
 			Node* temp = back;
 			back = back->prev;
 
+			delete temp;
+
 			if (back == nullptr) {
-				delete temp->next;
+				front = nullptr;
 				return;
 			}
 
-			delete temp->next;
 			back->next = nullptr;
 		};
 
+		// Removes and deletes all elements from the list.
 		void clear() {
 			Iterator it = begin();
 			Iterator itEnd = end();
@@ -148,6 +155,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 			}
 		};
 
+		// Returns true if you find a node whose data equals the specified element, false otherwise
 		bool contains(T element) const {
 			Iterator it = begin();
 			while (it != end()) {
@@ -159,13 +167,14 @@ namespace ufl_cap4053 { namespace fundamentals {
 			return false;
 		};
 
+		// Removes the first node you find whose data equals the specified element.
 		void remove(T element) {
 			Iterator it = begin();
 			while (it != end()) {
 				if (*it == element) {
 					if (front == nullptr)
 						return;
-					Node* temp = it.currentNode;
+					Node* temp = it.getNode();
 					count--;
 
 					if (front == temp)
@@ -185,6 +194,11 @@ namespace ufl_cap4053 { namespace fundamentals {
 				}
 				++it;
 			}
+		};
+
+		// Destructor for LinkedList
+		~LinkedList<T>() {
+			clear();
 		};
 	};
 } }  // namespace ufl_cap4053::fundamentals
