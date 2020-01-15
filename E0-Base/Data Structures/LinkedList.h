@@ -96,10 +96,9 @@ namespace ufl_cap4053 { namespace fundamentals {
 			if (front == nullptr) {
 				return;
 			}
+
 			count--;
-
 			Node* temp = front;
-
 			front = front->next;
 
 			if (front == nullptr) {
@@ -116,6 +115,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 			if (back == nullptr) {
 				return;
 			}
+
 			count--;
 			Node* temp = back;
 			back = back->prev;
@@ -157,6 +157,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 					if (front == nullptr)
 						return;
 					Node* temp = it.currentNode;
+					count--;
 
 					if (front == temp)
 						front = temp->next;
@@ -171,7 +172,6 @@ namespace ufl_cap4053 { namespace fundamentals {
 						temp->prev->next = temp->next;
 					
 					delete temp;
-					count--;
 					return;
 				}
 				++it;
