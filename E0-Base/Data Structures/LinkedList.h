@@ -83,9 +83,11 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 			if (back == nullptr) {
 				front = back = temp;
+				front->prev = nullptr;
 				return;
 			}
 
+			temp->prev = back;
 			back->next = temp;
 			back = temp;
 		};
@@ -103,41 +105,72 @@ namespace ufl_cap4053 { namespace fundamentals {
 			if (front == nullptr) {
 				back = nullptr;
 			}
-			delete(temp);
+			else {
+				front->prev = nullptr;
+			}
+
+			delete temp;
 		};
 
 		void pop() {
-			back = back->prev;
-			delete back->next;
+			if (back == nullptr) {
+				return;
+			}
 			count--;
+			Node* temp = back;
+			back = back->prev;
+
+			if (back == nullptr) {
+				delete temp->next;
+				return;
+			}
+
+			delete temp->next;
+			back->next = nullptr;
 		};
 
 		void clear() {
 			Iterator it = begin();
-			for (it; it != end(); ++it) {
-				delete it.currentNode;
-				count--;
+			Iterator itEnd = end();
+
+			while (it != itEnd){
+				++it;
+				dequeue();
 			}
 		};
 
 		bool contains(T element) const {
 			Iterator it = begin();
-			while (!((it == end()) && (*it == element))) {
+			while (it != end()) {
+				if (*it == element) {
+					return true;
+				}
 				++it;
 			}
-			
-			return (*it == element);
+			return false;
 		};
 
 		void remove(T element) {
 			Iterator it = begin();
 			while (it != end()) {
 				if (*it == element) {
+					if (front == nullptr)
+						return;
 					Node* temp = it.currentNode;
-					temp = temp->next;
-					temp->prev = temp;
-					delete temp;
 
+					if (front == temp)
+						front = temp->next;
+
+					if (back == temp)
+						back = temp->prev;
+
+					if (temp->next != nullptr)
+						temp->next->prev = temp->prev;
+
+					if (temp->prev != nullptr)
+						temp->prev->next = temp->next;
+					
+					delete temp;
 					count--;
 					return;
 				}
