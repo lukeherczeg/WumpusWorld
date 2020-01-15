@@ -2,7 +2,10 @@
 #include <string>
 #include <cassert>
 #include <iostream>
+#include <stdlib.h>
+#include <crtdbg.h>
 #include "../Data Structures/LinkedList.h"
+#define _CRTDBG_MAP_ALLOC
 
 using namespace std;
 namespace fund = ufl_cap4053::fundamentals;
@@ -212,8 +215,28 @@ int main()
     traverse(valueList, printString);
     cout << endl << endl;
 
+    pointerList.clear();
+    valueList.clear();
+
+    cout << endl << "\tpointerList:";
+    traverse(pointerList, printCString);
+    cout << endl << "\tvalueList:";
+    traverse(valueList, printString);
+    cout << endl << endl;
+
     cout << "Press ENTER to continue..." << endl;
+
+    // Send all reports to STDOUT
+    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE);
+    _CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDOUT);
+    _CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_FILE);
+    _CrtSetReportFile(_CRT_ERROR, _CRTDBG_FILE_STDOUT);
+    _CrtSetReportMode(_CRT_ASSERT, _CRTDBG_MODE_FILE);
+    _CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDOUT);
+
+
     while(cin.get() != '\n') {;}
+    _CrtDumpMemoryLeaks();
     return 0;
 }
 
