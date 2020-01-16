@@ -85,7 +85,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 		deleteTree(behavior);
 		for (unsigned index = 0; index < 6; index++)
-			delete worldData[index];
+			delete[] worldData[index];
 
 		delete[] worldData;
 	}
