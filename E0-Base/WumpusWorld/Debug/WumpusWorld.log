@@ -1,18 +1,14 @@
 ﻿  Behavior.cpp
   Agent.cpp
   Behaviors.cpp
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(210,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(214,31): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(216,32): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(221,32): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(226,15): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(228,33): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\WumpusWorld\Game\Behaviors.cpp(234,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(210,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(214,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(216,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(221,32): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(226,15): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(228,33): warning C4018: '<': signed/unsigned mismatch
   Game.cpp
   World.cpp
   Generating Code...
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\Data Structures\TreeNode.h(26): error C4716: 'ufl_cap4053::fundamentals::TreeNode<char const *>::getChildCount': must return a value
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\Data Structures\TreeNode.h(31): error C4716: 'ufl_cap4053::fundamentals::TreeNode<char const *>::getChild': must return a value
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\Data Structures\TreeNode.h(21): error C4716: 'ufl_cap4053::fundamentals::TreeNode<char const *>::getData': must return a value
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\Data Structures\TreeNode.h(26): error C4716: 'ufl_cap4053::fundamentals::TreeNode<char const *>::getChildCount': must return a value
-C:\Users\Luke H\Irrelevant Stuff\Desktop\Exercise0\E0-Base\Data Structures\TreeNode.h(31): error C4716: 'ufl_cap4053::fundamentals::TreeNode<char const *>::getChild': must return a value
+C:\Users\Steve\Desktop\E0\E0-Base\WumpusWorld\Game\Behaviors.cpp(234,33): warning C4018: '<': signed/unsigned mismatch
+  WumpusWorld.vcxproj -> C:\Users\Steve\Desktop\E0\E0-Base\Debug\WumpusWorld.exe

@@ -1,5 +1,3 @@
-
-// LinkedList class should go in the "ufl_cap4053::fundamentals" namespace!
 namespace ufl_cap4053 { namespace fundamentals {
 	template <class T>
 	class LinkedList {
@@ -26,6 +24,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 			T operator*() const {
 				return currentNode->data;
 			};
+
 			// Pre-increment overload; advance the operator one position in the list. Return this iterator. 
 			Iterator& operator++() {
 				if (currentNode->next != nullptr)
@@ -35,14 +34,17 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 				return *this;
 			};
+
 			// Returns true it both iterators point to the same node in the list, and false otherwise.
 			bool operator==(Iterator const& rhs) {
 				return (currentNode == rhs.currentNode);
 			};
+
 			// Returns false it both iterators point to the same node in the list, and true otherwise.
 			bool operator!=(Iterator const& rhs) {
 				return (currentNode != rhs.currentNode);
 			};
+
 			// Gets the node that the iterator currently points to.
 			Node* getNode() {
 				return currentNode;
@@ -53,6 +55,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 		// A sentinel front and back node, as well as count of elements in the list
 		Node* front;
 		Node* back;
+
 		int count = 0;
 
 	public:
@@ -66,8 +69,10 @@ namespace ufl_cap4053 { namespace fundamentals {
 			return Iterator(front);
 		};
 
-		// Returns an Iterator pointing past the end of the list (an invalid, unique state)
+		// Returns an Iterator pointing past the end of the list (an invalid, unique state).
 		Iterator end() const {
+			// If back is null, we can't dereference it, so we just return an Iterator that is null.
+
 			if (back == nullptr)
 				return Iterator(back);
 
@@ -112,7 +117,6 @@ namespace ufl_cap4053 { namespace fundamentals {
 			if (front == nullptr)
 				return;
 
-			count--;
 			Node* temp = front;
 			front = front->next;
 
@@ -122,6 +126,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 				front->prev = nullptr;
 
 			delete temp;
+			count--;
 		};
 
 		// Removes the last element from the list.
@@ -130,11 +135,11 @@ namespace ufl_cap4053 { namespace fundamentals {
 				return;
 			}
 
-			count--;
 			Node* temp = back;
 			back = back->prev;
-
+			
 			delete temp;
+			count--;
 
 			if (back == nullptr) {
 				front = nullptr;

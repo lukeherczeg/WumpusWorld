@@ -97,6 +97,13 @@ int main()
 	SetConsoleOutputCP(CP_UTF8);
 #endif
 
+	_CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE);
+	_CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDOUT);
+	_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_FILE);
+	_CrtSetReportFile(_CRT_ERROR, _CRTDBG_FILE_STDOUT);
+	_CrtSetReportMode(_CRT_ASSERT, _CRTDBG_MODE_FILE);
+	_CrtSetReportFile(_CRT_ASSERT, _CRTDBG_FILE_STDOUT);
+
 	// First, run a general test of the behavior tree mechanisms.
 	Behavior* root = buildTree();
 	cout << "\nBreadth-First:\n--------------\n";
